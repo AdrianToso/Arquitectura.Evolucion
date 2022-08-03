@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Domain.Patrones.Adapter;
+using Domain.Patrones.Composite;
 using Domain.Patrones.Decorator;
 
 namespace PruebasConsola
@@ -37,6 +38,7 @@ namespace PruebasConsola
             #endregion
 
             #region DECORATOR
+            /*
             BebidaComponent cafe = new CafeSolo();
             cafe = new Leche(cafe);
             cafe = new Azucar(cafe);
@@ -60,7 +62,44 @@ namespace PruebasConsola
             Console.WriteLine($"Producto: {te.Descripcion} tiene un costo de : ${te.Costo}");
             Console.WriteLine();
             Console.WriteLine($"Producto: {decaf.Descripcion} tiene un costo de : ${decaf.Costo}");
+            Console.ReadKey();*/
+            #endregion
+
+            #region COMPOSITE
+            Componente root = new Directorio("Raiz");
+
+            Componente archivo1 = new Archivo("Archivo1.txt",10);
+            Componente archivo2 = new Archivo("Archivo2.txt", 30);
+            Componente archivo3 = new Archivo("Archivo3.txt", 120);
+            Componente archivo4 = new Archivo("Archivo4.txt", 800);
+            Componente archivo5 = new Archivo("Archivo5.txt", 460);
+
+            Componente dir1 = new Directorio("dir1");
+            Componente dir2 = new Directorio("dir2");
+            Componente dir3 = new Directorio("dir3");
+
+            dir1.AgregarHijo(archivo1);
+            dir2.AgregarHijo(archivo2);
+            dir3.AgregarHijo(archivo3);
+            dir3.AgregarHijo(archivo4);
+            dir1.AgregarHijo(dir3);
+
+            root.AgregarHijo(dir1);
+            root.AgregarHijo(dir2);
+            root.AgregarHijo(archivo5);
+
+
+            Console.WriteLine($"El tamaño del directorio: {root.Nombre} es: {root.GetSize}");
+            Console.WriteLine();
+            Console.WriteLine($"El tamaño del directorio: {dir1.Nombre} es: {dir1.GetSize}");
+            Console.WriteLine();
+            Console.WriteLine($"El tamaño del directorio: {dir2.Nombre} es: {dir2.GetSize}");
+            Console.WriteLine();
+            Console.WriteLine($"El tamaño del directorio: {dir3.Nombre} es: {dir3.GetSize}");
+            Console.WriteLine();
             Console.ReadKey();
+
+
             #endregion
         }
     }

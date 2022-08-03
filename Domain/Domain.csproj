@@ -48,6 +48,9 @@
     <Compile Include="Patrones\Adapter\MotorElectrico.cs" />
     <Compile Include="Patrones\Adapter\MotorElectricoAdapter.cs" />
     <Compile Include="Patrones\Adapter\MotorNaftero.cs" />
+    <Compile Include="Patrones\Composite\Archivo.cs" />
+    <Compile Include="Patrones\Composite\Componente.cs" />
+    <Compile Include="Patrones\Composite\Directorio.cs" />
     <Compile Include="Patrones\Decorator\AgregadoDecorator.cs" />
     <Compile Include="Patrones\Decorator\Azucar.cs" />
     <Compile Include="Patrones\Decorator\BebidaComponent.cs" />
