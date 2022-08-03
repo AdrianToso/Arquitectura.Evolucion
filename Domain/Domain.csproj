@@ -48,6 +48,16 @@
     <Compile Include="Patrones\Adapter\MotorElectrico.cs" />
     <Compile Include="Patrones\Adapter\MotorElectricoAdapter.cs" />
     <Compile Include="Patrones\Adapter\MotorNaftero.cs" />
+    <Compile Include="Patrones\Decorator\AgregadoDecorator.cs" />
+    <Compile Include="Patrones\Decorator\Azucar.cs" />
+    <Compile Include="Patrones\Decorator\BebidaComponent.cs" />
+    <Compile Include="Patrones\Decorator\CafeDescafeinado.cs" />
+    <Compile Include="Patrones\Decorator\CafeExpresso.cs" />
+    <Compile Include="Patrones\Decorator\CafeSolo.cs" />
+    <Compile Include="Patrones\Decorator\Crema.cs" />
+    <Compile Include="Patrones\Decorator\Edulcorante.cs" />
+    <Compile Include="Patrones\Decorator\Leche.cs" />
+    <Compile Include="Patrones\Decorator\TeComun.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User.cs" />
   </ItemGroup>
@@ -57,5 +67,6 @@
       <Name>Abstractions</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

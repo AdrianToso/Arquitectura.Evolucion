@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Domain.Patrones.Adapter;
+using Domain.Patrones.Decorator;
 
 namespace PruebasConsola
 {
@@ -12,6 +13,8 @@ namespace PruebasConsola
     {
         static void Main(string[] args)
         {
+            #region ADAPTER
+            /*
             MotorNaftero motor1 = new MotorNaftero();
             motor1.Arrancar();
             motor1.Acelerar();
@@ -30,7 +33,35 @@ namespace PruebasConsola
             motor.Detener();
             motor.CargarCombustible();
 
+            Console.ReadKey();*/
+            #endregion
+
+            #region DECORATOR
+            BebidaComponent cafe = new CafeSolo();
+            cafe = new Leche(cafe);
+            cafe = new Azucar(cafe);
+
+            BebidaComponent cafe1 = new CafeSolo();
+            cafe1 = new Azucar(cafe1);
+            cafe1 = new Azucar(cafe1);
+            cafe1 = new Crema(cafe1);
+
+
+            BebidaComponent te = new TeComun();
+            te = new Edulcorante(te);
+
+            BebidaComponent decaf = new CafeDescafeinado();
+            decaf = new Edulcorante(decaf);
+
+            Console.WriteLine($"Producto: {cafe.Descripcion} tiene un costo de : ${cafe.Costo}");
+            Console.WriteLine();
+            Console.WriteLine($"Producto: {cafe1.Descripcion} tiene un costo de : ${cafe1.Costo}");
+            Console.WriteLine();
+            Console.WriteLine($"Producto: {te.Descripcion} tiene un costo de : ${te.Costo}");
+            Console.WriteLine();
+            Console.WriteLine($"Producto: {decaf.Descripcion} tiene un costo de : ${decaf.Costo}");
             Console.ReadKey();
+            #endregion
         }
     }
 }
