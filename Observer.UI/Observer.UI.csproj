@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{79F0DFAD-2327-4D85-921A-5555F959F4CD}</ProjectGuid>
+    <ProjectGuid>{93F475CA-D302-4420-9318-EB6071CD44DF}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>FrmMain</RootNamespace>
-    <AssemblyName>FrmMain</AssemblyName>
+    <RootNamespace>Observer.UI</RootNamespace>
+    <AssemblyName>Observer.UI</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -53,26 +53,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormMain.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormMain.Designer.cs">
-      <DependentUpon>FormMain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmLogin.Designer.cs">
-      <DependentUpon>frmLogin.cs</DependentUpon>
-    </Compile>
+    <Compile Include="IObserverUsuario.cs" />
+    <Compile Include="ISujetoProducto.cs" />
+    <Compile Include="Producto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormMain.resx">
-      <DependentUpon>FormMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmLogin.resx">
-      <DependentUpon>frmLogin.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="Usuario.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -94,24 +80,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Abstractiona\Abstractions.csproj">
-      <Project>{b15771c5-de0d-4f30-9bdc-3b9374d6f14d}</Project>
-      <Name>Abstractions</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ApplicationService\ApplicationService.csproj">
-      <Project>{bfbe1ea5-eebf-4488-b25b-172511dd5553}</Project>
-      <Name>ApplicationService</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Domain\Domain.csproj">
-      <Project>{65fc8c71-7439-4fd9-8238-adf833b72aac}</Project>
-      <Name>Domain</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Services\Services.csproj">
-      <Project>{54ab6ac6-0d5e-4240-ac72-7f4feccd0649}</Project>
-      <Name>Services</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

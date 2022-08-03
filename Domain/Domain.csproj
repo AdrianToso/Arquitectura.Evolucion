@@ -33,6 +33,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,6 +49,12 @@
     <Compile Include="Patrones\Adapter\MotorElectrico.cs" />
     <Compile Include="Patrones\Adapter\MotorElectricoAdapter.cs" />
     <Compile Include="Patrones\Adapter\MotorNaftero.cs" />
+    <Compile Include="Patrones\Composite\Archivo.cs" />
+    <Compile Include="Patrones\Composite\Componente.cs" />
+    <Compile Include="Patrones\Composite\Directorio.cs" />
+    <Compile Include="Patrones\Composite\Menu.cs" />
+    <Compile Include="Patrones\Composite\MenuComponent.cs" />
+    <Compile Include="Patrones\Composite\MenuItem.cs" />
     <Compile Include="Patrones\Decorator\AgregadoDecorator.cs" />
     <Compile Include="Patrones\Decorator\Azucar.cs" />
     <Compile Include="Patrones\Decorator\BebidaComponent.cs" />
@@ -58,6 +65,10 @@
     <Compile Include="Patrones\Decorator\Edulcorante.cs" />
     <Compile Include="Patrones\Decorator\Leche.cs" />
     <Compile Include="Patrones\Decorator\TeComun.cs" />
+    <Compile Include="Patrones\Observer\IObserverUsuario.cs" />
+    <Compile Include="Patrones\Observer\ISujetoProducto.cs" />
+    <Compile Include="Patrones\Observer\Producto.cs" />
+    <Compile Include="Patrones\Observer\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User.cs" />
   </ItemGroup>
@@ -67,6 +78,8 @@
       <Name>Abstractions</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Patrones\Iterator\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

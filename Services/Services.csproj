@@ -46,7 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Abstractiona\Abstractions.csproj">
-      <Project>{B15771C5-DE0D-4F30-9BDC-3B9374D6F14D}</Project>
+      <Project>{b15771c5-de0d-4f30-9bdc-3b9374d6f14d}</Project>
       <Name>Abstractions</Name>
     </ProjectReference>
     <ProjectReference Include="..\Domain\Domain.csproj">
