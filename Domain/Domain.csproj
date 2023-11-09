@@ -52,7 +52,7 @@
     <Compile Include="Patrones\Composite\Archivo.cs" />
     <Compile Include="Patrones\Composite\Componente.cs" />
     <Compile Include="Patrones\Composite\Directorio.cs" />
-
+<<<<<<< HEAD
     <Compile Include="Patrones\Composite\Menu.cs" />
     <Compile Include="Patrones\Composite\MenuComponent.cs" />
     <Compile Include="Patrones\Composite\MenuItem.cs" />
