@@ -7,8 +7,8 @@
     <ProjectGuid>{B15771C5-DE0D-4F30-9BDC-3B9374D6F14D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Abstractiona</RootNamespace>
-    <AssemblyName>Abstractiona</AssemblyName>
+    <RootNamespace>Abstractions</RootNamespace>
+    <AssemblyName>Abstractions</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,8 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IUsuario.cs" />
+    <Compile Include="IEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Usuarios\IObserverUsuario.cs" />
+    <Compile Include="Usuarios\ISujetoProducto.cs" />
+    <Compile Include="Usuarios\IUsuario.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

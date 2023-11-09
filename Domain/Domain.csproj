@@ -52,9 +52,12 @@
     <Compile Include="Patrones\Composite\Archivo.cs" />
     <Compile Include="Patrones\Composite\Componente.cs" />
     <Compile Include="Patrones\Composite\Directorio.cs" />
+<<<<<<< HEAD
     <Compile Include="Patrones\Composite\Menu.cs" />
     <Compile Include="Patrones\Composite\MenuComponent.cs" />
     <Compile Include="Patrones\Composite\MenuItem.cs" />
+=======
+>>>>>>> 5887be451e8b6fa0b8535f90ceeb75f4c01cf4e0
     <Compile Include="Patrones\Decorator\AgregadoDecorator.cs" />
     <Compile Include="Patrones\Decorator\Azucar.cs" />
     <Compile Include="Patrones\Decorator\BebidaComponent.cs" />

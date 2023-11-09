@@ -68,7 +68,10 @@ namespace PruebasConsola
             #endregion
 
             #region COMPOSITE
+<<<<<<< HEAD
             /*
+=======
+>>>>>>> 5887be451e8b6fa0b8535f90ceeb75f4c01cf4e0
             Componente root = new Directorio("Raiz");
 
             Componente archivo1 = new Archivo("Archivo1.txt",10);
@@ -103,6 +106,7 @@ namespace PruebasConsola
             Console.ReadKey();
 
 
+<<<<<<< HEAD
             */
             //MenuItem Pollo= new MenuItem("Pollo", "Pollo entero asado", "550");
             //Menu Carnes = new Menu("Carnes", "Carnes asadas", "");
@@ -128,6 +132,8 @@ namespace PruebasConsola
 
 
 
+=======
+>>>>>>> 5887be451e8b6fa0b8535f90ceeb75f4c01cf4e0
             #endregion
         }
     }

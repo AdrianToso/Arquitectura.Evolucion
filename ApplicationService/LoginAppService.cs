@@ -23,7 +23,8 @@ namespace ApplicationService
         
         public void Login(string username, string password)
         {
-            if (String.IsNullOrEmpty(username) || String.IsNullOrEmpty(password)) throw new Exception("Todos los campos son obligatorios");
+            if (String.IsNullOrEmpty(username) || String.IsNullOrEmpty(password)) 
+                throw new Exception("Todos los campos son obligatorios");
 
 
             try
