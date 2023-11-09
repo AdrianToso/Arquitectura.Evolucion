@@ -68,72 +68,7 @@ namespace PruebasConsola
             #endregion
 
             #region COMPOSITE
-<<<<<<< HEAD
-            /*
-=======
->>>>>>> 5887be451e8b6fa0b8535f90ceeb75f4c01cf4e0
-            Componente root = new Directorio("Raiz");
 
-            Componente archivo1 = new Archivo("Archivo1.txt",10);
-            Componente archivo2 = new Archivo("Archivo2.txt", 30);
-            Componente archivo3 = new Archivo("Archivo3.txt", 120);
-            Componente archivo4 = new Archivo("Archivo4.txt", 800);
-            Componente archivo5 = new Archivo("Archivo5.txt", 460);
-
-            Componente dir1 = new Directorio("dir1");
-            Componente dir2 = new Directorio("dir2");
-            Componente dir3 = new Directorio("dir3");
-
-            dir1.AgregarHijo(archivo1);
-            dir2.AgregarHijo(archivo2);
-            dir3.AgregarHijo(archivo3);
-            dir3.AgregarHijo(archivo4);
-            dir1.AgregarHijo(dir3);
-
-            root.AgregarHijo(dir1);
-            root.AgregarHijo(dir2);
-            root.AgregarHijo(archivo5);
-
-
-            Console.WriteLine($"El tamaño del directorio: {root.Nombre} es: {root.GetSize}");
-            Console.WriteLine();
-            Console.WriteLine($"El tamaño del directorio: {dir1.Nombre} es: {dir1.GetSize}");
-            Console.WriteLine();
-            Console.WriteLine($"El tamaño del directorio: {dir2.Nombre} es: {dir2.GetSize}");
-            Console.WriteLine();
-            Console.WriteLine($"El tamaño del directorio: {dir3.Nombre} es: {dir3.GetSize}");
-            Console.WriteLine();
-            Console.ReadKey();
-
-
-<<<<<<< HEAD
-            */
-            //MenuItem Pollo= new MenuItem("Pollo", "Pollo entero asado", "550");
-            //Menu Carnes = new Menu("Carnes", "Carnes asadas", "");
-            //MenuItem Asado = new MenuItem("Asado", "carne asada para 2", "1000");
-            //Menu Pasta = new Menu("Pastas", " nuestra seleccion", "");
-            //MenuItem tallarines = new MenuItem("tallarines", "salsa a eleccion", "450");
-            //MenuItem agnolotis = new MenuItem("Agnolotis", "salsa a eleccion", "450");
-            //Carnes.AddChildren(Pollo);
-            //Carnes.AddChildren(Asado);
-            //Pasta.AddChildren(tallarines);
-            //Pasta.AddChildren(agnolotis);
-
-            //List<Menu> list = new List<Menu>();
-
-            //list.Add(Carnes);
-            //list.Add(Pasta);
-
-            //foreach (var item in list)
-            // item.Imprimir();
-                
-            //Console.ReadKey();
-
-
-
-
-=======
->>>>>>> 5887be451e8b6fa0b8535f90ceeb75f4c01cf4e0
             #endregion
         }
     }
